@@ -4,17 +4,31 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Swift World</title>
+  <title>Welcome to Swift world | Swift World</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Swift World">
-<meta property="og:url" content="http://swiftworld.github.io/index.html">
+  <meta name="description" content="Swift is a new programming language developed by Apple Inc for iOS and OS X development. 
+
+Swift adopts the best of C and Objective-C, without the constraints of C compatibility.
+
+Swift uses the same">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Welcome to Swift world">
+<meta property="og:url" content="http://swiftworld.github.io/2015/09/27/Welcome-to-Swift-world/index.html">
 <meta property="og:site_name" content="Swift World">
-<meta property="og:description">
+<meta property="og:description" content="Swift is a new programming language developed by Apple Inc for iOS and OS X development. 
+
+Swift adopts the best of C and Objective-C, without the constraints of C compatibility.
+
+Swift uses the same">
+<meta property="og:image" content="http://resource.feng.com/resource/h041/h26/img201410081311370.jpg">
+<meta property="og:updated_time" content="2015-09-27T15:10:17.526Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Swift World">
-<meta name="twitter:description">
+<meta name="twitter:title" content="Welcome to Swift world">
+<meta name="twitter:description" content="Swift is a new programming language developed by Apple Inc for iOS and OS X development. 
+
+Swift adopts the best of C and Objective-C, without the constraints of C compatibility.
+
+Swift uses the same">
   
   
     <link rel="icon" href="/favicon.png">
@@ -47,9 +61,7 @@
   </div>
 </header>
     <div class="outer">
-      <section id="main">
-  
-    <article id="post-Welcome-to-Swift-world" class="article article-type-post" itemscope itemprop="blogPost">
+      <section id="main"><article id="post-Welcome-to-Swift-world" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2015/09/27/Welcome-to-Swift-world/" class="article-date">
   <time datetime="2015-09-27T15:10:17.526Z" itemprop="datePublished">2015-09-27</time>
@@ -62,8 +74,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/09/27/Welcome-to-Swift-world/">Welcome to Swift world</a>
+    <h1 class="article-title" itemprop="name">
+      Welcome to Swift world
     </h1>
   
 
@@ -94,11 +106,42 @@
 <li><p>This last line creates a variable named str that holds the value <code>Hello, playground</code></p>
 </li>
 </ul>
-        
-          <p class="article-more-link">
-            <a href="/2015/09/27/Welcome-to-Swift-world/#more">Read More</a>
-          </p>
-        
+<a id="more"></a>
+<h2 id="Variables_and_Constants">Variables and Constants</h2><h3 id="Variables">Variables</h3><p>When we create a variable, we always use the following syntax:</p>
+<pre><code><span class="variable"><span class="keyword">var</span> yourVariableName</span>: yourType = yourInitialValue
+</code></pre><p>For an example! </p>
+<pre><code><span class="variable"><span class="keyword">var</span> str</span>: String = <span class="string">"Welcome to Swift world!"</span>
+<span class="variable"><span class="keyword">var</span> age</span>: <span class="typename">Int</span> = <span class="number">24</span>
+</code></pre><p>In the first line, we created a variable named str of type String, and set the initial value to “Welcome to Swift world!”</p>
+<p>In the second line, you created a variable named age of type Int, and set the initial value to 24. </p>
+<blockquote>
+<p>In the Swift,we don’t always have to write the type explicitly.</p>
+<p>Providing a value when you create a constant or variable lets the compiler infer its type.</p>
+</blockquote>
+<p>So the example could use like this:</p>
+<pre><code><span class="variable"><span class="keyword">var</span> str</span> = <span class="string">"Welcome to Swift world!"</span>
+<span class="variable"><span class="keyword">var</span> age</span> = <span class="number">24</span>
+</code></pre><h3 id="Constants">Constants</h3><p>Values are never implicitly converted to another type. If we need to convert a value to a different type, explicitly make an instance of the desired type. </p>
+<pre><code>let <span class="tag">label</span> = <span class="string">"Welcome to Swift world "</span>
+let <span class="attribute">width</span> = <span class="number">2015</span>
+let widthLabel = <span class="tag">label</span> + <span class="function"><span class="title">String</span><span class="params">(width)</span></span>
+</code></pre><p>There’s an even simpler way to include values in strings: Write the value in parentheses, and write a backslash () before the parentheses. For example: </p>
+<pre><code><span class="keyword">let</span> apples = <span class="number">3</span>
+<span class="keyword">let</span> oranges = <span class="number">5</span>
+<span class="keyword">let</span> appleSummary = <span class="string">"I have <span class="subst">\(apples)</span> apples."</span>
+<span class="keyword">let</span> fruitSummary = <span class="string">"I have <span class="subst">\(apples + oranges)</span> pieces of fruit."</span>
+</code></pre><h3 id="Arrays_and_Dictionaries">Arrays and Dictionaries</h3><blockquote>
+<p>Create arrays and dictionaries using brackets ([]), and access their elements by writing the index or key in brackets. A comma is allowed after the last element. </p>
+</blockquote>
+<pre><code><span class="variable"><span class="keyword">var</span> shoppingList</span> = [<span class="string">"catfish"</span>, <span class="string">"water"</span>, <span class="string">"tulips"</span>, <span class="string">"blue paint"</span>]
+shoppingList[<span class="number">1</span>] = <span class="string">"bottle of water"</span>
+
+<span class="variable"><span class="keyword">var</span> occupations</span> = [
+    <span class="string">"Malcolm"</span>: <span class="string">"Captain"</span>,
+    <span class="string">"Kaylee"</span>: <span class="string">"Mechanic"</span>,
+]
+occupations[<span class="string">"Jayne"</span>] = <span class="string">"Public Relations"</span>
+</code></pre>
       
     </div>
     <footer class="article-footer">
@@ -112,61 +155,24 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/09/27/hello-world/" class="article-date">
-  <time datetime="2015-09-27T13:30:37.416Z" itemprop="datePublished">2015-09-27</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/09/27/hello-world/">Hello World</a>
-    </h1>
+    <a href="/2015/09/27/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="http://hexo.io/">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3>
-        
-          <p class="article-more-link">
-            <a href="/2015/09/27/hello-world/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      
-        <a data-url="http://swiftworld.github.io/2015/09/27/hello-world/" data-id="cif2jq43g00011os9ayvjlkcu" class="article-share-link" data-share="baidu" data-title="Hello World">Share</a>
-      
-
-    
-
-      
-    </footer>
-  </div>
   
 </article>
 
 
-  
-  
+  <section id="comments">
+    <div id="ds-thread" class="ds-thread" data-thread-key="2015/09/27/Welcome-to-Swift-world/" data-title="Welcome to Swift world" data-url="http://swiftworld.github.io/2015/09/27/Welcome-to-Swift-world/"></div>
+  </section>
 </section>
       
       <aside id="sidebar">
