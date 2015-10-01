@@ -12,7 +12,7 @@
 <meta property="og:url" content="http://swiftworld.github.io/2015/10/01/Dictionaries-with-Swift/index.html">
 <meta property="og:site_name" content="Welcome To Swift World">
 <meta property="og:description" content="What is a dictionary?A dictionary stores multiple values, each one accessed using a unique key. Items in a dictionary do not have a specified order. You use a dictionary when you need to look up value">
-<meta property="og:updated_time" content="2015-10-01T16:09:58.051Z">
+<meta property="og:updated_time" content="2015-10-01T16:15:57.899Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Dictionaries with Swift">
 <meta name="twitter:description" content="What is a dictionary?A dictionary stores multiple values, each one accessed using a unique key. Items in a dictionary do not have a specified order. You use a dictionary when you need to look up value">
@@ -77,8 +77,12 @@
 <p>However, the type of the keys and the type of the values don’t need to be the same. By that I mean we can have a dictionary where all the keys are strings, and all the values are ints. Or any other combination that you can conjure up. What we can’t have is a dictionary where a key might be a int or string or boolean.<br><a id="more"></a><br>If we wanted to declare a dictionary and load it with values from some external datasource later we would need to declare the key and value types first.</p>
 <pre><code>var nflTeams: [<span class="built_in">String</span>: <span class="built_in">String</span>]// Declaring dictionary <span class="keyword">with</span> <span class="built_in">String</span> keys <span class="literal">and</span> <span class="built_in">String</span> values
 </code></pre><p>To declare the key and value types we simply give our dictionary a name followed by a colon which is proceeded by our key and value types within square brackets. </p>
-<h3 id="Accessing_dictionary_elements">Accessing dictionary elements</h3><p>var nfcWest = [“SF”:”SanFrancisco 49ers”, “SEA”: “Seattle Seahawks”,”ARI” : “Arizona Cardinals”,”STL”: “Saint Louis Rams”]</p>
-<p>If I wanted to printout “SanFrancisco 49ers” I could use the println function with the name of the dictionary, and the key surrounded by square brackets.</p>
+<h3 id="Accessing_dictionary_elements">Accessing dictionary elements</h3><pre><code><span class="variable"><span class="keyword">var</span> nfcWest</span> = [<span class="string">"SF"</span>:<span class="string">"SanFrancisco 49ers"</span>, 
+               <span class="string">"SEA"</span>: <span class="string">"Seattle Seahawks"</span>,
+               <span class="string">"ARI"</span> : <span class="string">"Arizona Cardinals"</span>,
+                <span class="string">"STL"</span>: <span class="string">"Saint Louis Rams"</span>
+              ]
+</code></pre><p>If I wanted to printout “SanFrancisco 49ers” I could use the println function with the name of the dictionary, and the key surrounded by square brackets.</p>
 <pre><code>println<span class="list">(<span class="keyword">nfcWest</span>[<span class="string">"SF"</span>])</span> // optional <span class="list">(<span class="keyword">SanFrancisco</span> <span class="number">49</span>ers)</span>
 </code></pre><p>Now you may have noticed that we get this optional written around our value. Don’t worry about this too much right now I will cover optionals in a later post.</p>
 <p>Go ahead and unwrap the optional by adding an explanation mark outside our brackets. </p>
