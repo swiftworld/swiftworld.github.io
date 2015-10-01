@@ -47,7 +47,7 @@
     <div class="outer">
       <section id="main">
   
-    <article id="post-Welcome To Swift World" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-Dictionaries-with-Swift" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     
     
@@ -59,7 +59,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2015/10/01/Welcome To Swift World/">Welcome To Swift World!</a>
+      <a class="article-title" href="/2015/10/01/Dictionaries-with-Swift/">Dictionaries with Swift</a>
     </h1>
   
 
@@ -68,8 +68,19 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome To Swift World!</p>
-
+        <h3 id="What_is_a_dictionary?">What is a dictionary?</h3><p>A dictionary stores multiple values, each one accessed using a unique key. Items in a dictionary do not have a specified order. You use a dictionary when you need to look up values based on their identifier.</p>
+<h3 id="Creating_a_dictionary">Creating a dictionary</h3><p>The shorthand way to create a dictionary where you already know the values ahead of time is much like an Array. Simply declare this dictionary with a var or let followed by the equals sign and two square brackets. </p>
+<pre><code>var nflTeams = [Key: <span class="keyword">Value</span>, Key: <span class="keyword">Value</span>]
+</code></pre><p>Each key and value are separated by colon, and then a comma separates each key value pair.</p>
+<blockquote>
+<p>All Keys must be of the same type and all values must be of the same type</p>
+</blockquote>
+<p>However, the type of the keys and the type of the values don’t need to be the same. By that I mean we can have a dictionary where all the keys are strings, and all the values are ints. Or any other combination that you can conjure up. What we can’t have is a dictionary where a key might be a int or string or boolean.<br>
+        
+          <p class="article-more-link">
+            <a href="/2015/10/01/Dictionaries-with-Swift/#more">Read More</a>
+          </p>
+        
       
     </div>
     
